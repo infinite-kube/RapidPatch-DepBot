@@ -1,4 +1,4 @@
-name: ci 
+name: ci
 on:
   pull_request:
   push:
@@ -10,8 +10,12 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - run: npm ci
-      - name: Smoke: boot & health check
+      - name:
+         Smoke:
+          boot & health check
         run: npm run smoke
-      - name: Security: npm audit (prod)
-        run: npm audit --omit=dev --audit-level=moderate`
-
+        
+      - name:
+         Security: 
+          npm audit (prod)
+        run: npm audit --omit=dev --audit-level=moderate
