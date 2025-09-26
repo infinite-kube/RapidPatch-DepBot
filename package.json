@@ -1,1 +1,15 @@
-`{   "name": "RapidPatch-DepBot",   "version": "0.1.0",   "private": true,   "scripts": {     "start": "node index.js",     "smoke": "node index.js & echo $! > .pid && sleep 2 && curl -fsS http://localhost:3000/healthz && kill $(cat .pid)"   },   "dependencies": {     "express": "4.16.0",     "axios": "0.21.1",     "lodash": "4.17.15",     "jsonwebtoken": "8.5.1",     "moment": "2.24.0"   } }`
+{   
+  "name": "RapidPatch-DepBot",   
+  "version": "0.1.0",   "private": true,   
+  "scripts": {
+    "start": "node index.js",
+    "smoke": "node index.js & echo $! > .pid && sleep 2 && curl -fsS http://localhost:3000/healthz && kill $(cat .pid)"
+  },   
+  "dependencies": {
+    "express": "4.16.0", 
+    "axios": "0.21.1",
+    "lodash": "4.17.15",
+    "jsonwebtoken": "8.5.1",
+    "moment": "2.24.0"   
+  } 
+}
