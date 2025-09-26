@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "daily"  # click “Check for updates” in GitHub to run now
+  labels: ["deps", "dependabot"]
+  groups: 
+    minor-and-patch:
+      applies-to: version-updates
+      update-types: ["minor", "patch"]
+  allow:       
+  - dependency-type: "direct"`
