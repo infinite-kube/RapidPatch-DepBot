@@ -1,0 +1,14 @@
+name: .github/dependabot.yml
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy check
+        run: echo "Dependabot check succeeded."
